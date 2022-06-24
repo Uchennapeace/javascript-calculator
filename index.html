@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arithemetic calculator</title>
+</head>
+<body>
+    <script >
+    const integer1 = parseFloat(prompt( 'Enter number'));
+    const operator = prompt( 'Select operator (+, -, /, *)');
+    const integer2 = parseFloat(prompt('Enter second number'));
+
+    let total;
+
+    if (integer1 && integer2 < 0){
+        alert( 'Input a valid number and try again');
+    } else 
+    if (operator =='+') {
+        total= interger1 + integer2;
+    
+    }else if (operator =='-'){
+        total= integer1 - integer2;
+
+    } else if (operator =='/' ){
+        total= integer1 / integer2;
+        
+    } else if (operator =='*' ) {
+        total= integer1 * integer2;
+
+    }
+    alert(integer1 + operator + integer2 +'=' + total);
+    </script>
+    
+</body>
+</html>
